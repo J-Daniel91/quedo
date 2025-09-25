@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+/* ahora cada clase va fuera y sola */
+.hero {
+  background: url('fotos/foto_0.jpeg') center/cover no-repeat;
+  height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-style: italic;
+  margin: 10px 0 0;
+}
+
+.steps {
+  background-color: #ecf3ab;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.step {
+  text-align: center;
+  max-width: 150px;
+}
+
+.step span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.models {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.model-card {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 100px auto;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+.model-img-wrapper {
+  position: relative;
+  z-index: 3;
+  margin-right: -80px; /* Hace que la imagen se meta dentro del fondo */
+}
+
+/* Botón con flecha */
+.model-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.arrow-button {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+
+.arrow-button:hover {
+  background-color: #cddc8f;
+  transform: scale(1.1);
+}
+
+/* Imagen sobre el fondo verde */
+.model-img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Fondo verde grande y destacado */
+.model-info {
+  background-color: #ecf3ab;
+  padding: 80px 60px;
+  flex: 1;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.model-info h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.model-info p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Tarjetas pares: imagen a la derecha */
+.models .model-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.models .model-card:nth-child(even) .model-img-wrapper {
+  margin-left: -80px;
+  margin-right: 0;
+}
+
+.models .model-card:nth-child(even) .model-img {
+  transform: translateX(60px); /* sobresale hacia la derecha */
+}
+
+.testimonials {
+  background: #ecf3ab;
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonial-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-imgs img {
+  width: 150px;
+  border-radius: 8px;
+}

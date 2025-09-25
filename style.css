@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+
+  .hero {
+    background: url('fotos/foto_0.jpeg') center/cover no-repeat;
+    height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    p {
+      font-style: italic;
+      margin: 10px 0 0;
+    }
+
+  }
+
+  .steps {
+    background-color: #ecf3ab;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    .step {
+      text-align: center;
+      max-width: 150px;
+
+      span {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .models {
+    text-align: center;
+    padding: 40px 20px;
+
+    .model-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 900px;
+
+      .model-img {
+        max-width: 300px;
+        margin: 0 20px;
+      }
+
+      .model-info {
+        background: #ecf3ab;
+        padding: 20px;
+        max-width: 400px;
+        text-align: left;
+      }
+    }
+
+    .model-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }  
+
+  .testimonials {
+    background: #ecf3ab;
+    padding: 40px;
+    text-align: center;
+
+    .testimonial-imgs {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+
+      img {
+        width: 150px;
+        border-radius: 8px;
+      }
+    }
+  }
+ 
+}
